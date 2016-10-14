@@ -1,0 +1,666 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 31, 2015, 11:05:12 AM
+    Author     : Sujit
+*/
+
+body{
+    background-attachment: fixed;
+    background-color: #e9e9eb;
+    opacity: 1;
+    background-position: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size: cover;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#label{
+    //opacity:0.9;
+    //filter:alpha(opacity=10);
+    background-image: url(images/first.jpg);
+    margin: 5px auto;
+    width: 1200px;
+    height: 135px;
+    text-align:center;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-left: 50px;
+}
+#navigation
+{
+    //background-color: #005896;
+    height: 45px;
+    width: 1200px;
+    border-radius: 8px;
+    margin: 5px auto;
+    margin-top: -38px; // set top distance for navigation bar
+    text-shadow: 0.1em 0.1em #red;
+    //background-image: url(images/water.jpg);
+    //background:#0096CD;
+    //border: 5px solid #E3E3E3;
+    //position: relative;
+}
+#nav
+{
+    list-style:none;    
+}
+#nav ul
+{
+    //margin: 100px 0px 0px 0px;
+    //padding: 0;
+    //width: 10px;
+    //display: block;
+}
+#nav li
+{
+    margin-top: 6px;
+    font-size: 32px;
+    font-weight: bolder;
+    float: left;
+    width: 290px;
+    height: 8px;
+    text-align: center;
+    font-style: italic;
+}
+/*
+#nav li.firstmain
+{
+    padding-left: 0px;
+}
+*/
+#nav a:link, /*nav a:active,*/ nav a:visited
+{
+    display: ruby-text;
+    color: #000;
+    text-decoration: aliceblue;
+}
+#nav a:hover
+{
+    color: #F9C7D5; 
+}
+#nav a.active 
+{
+    //background-color: cadetblue;
+    text-decoration-color: #000;
+}
+#home_window{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    border-radius: 15px;
+    opacity: 90%;
+
+}
+#home_info{
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration-color: slateblue;
+    opacity: 90%;
+}
+#home_image{
+    //padding-top: -50px;
+    //padding-left: 50px;
+    border-radius: 25px;
+}
+
+#browse_window{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    border-radius: 15px;
+    opacity: 90%;
+}
+#glob_box{
+    width: 100%;
+    height: 100px;
+    //background-color: #fc985d;
+    border-radius: 15px;
+}
+#glob_keyword{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+}
+#glob_btn{
+    width: 110px;
+    height: 40px;    
+}
+#abstract, #flip1 {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid 1px #c3c3c3;
+    border-radius: 25px;
+    width: 100%;
+}
+#abstract {
+    padding: 10px;
+    display: none;
+    height: 350px;
+    width: 100%;
+    background-color: lightgray;
+}
+#abstractbtn{
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+    height: 100%;
+    background-color: #c3c3c3;
+}
+#all_art_btn{
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#jour_yers_btn{
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#betwn_yers_btn{
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    //margin-top: 10px;
+}
+#pubmedsearch1{
+    //background: #005896;
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    background-color: #e9e9eb;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 150px;
+}
+#pubmedsearch2{
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    background-color: #e9e9eb;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 150px;
+}
+#pubmedsearch3{
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    background-color: #e9e9eb;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 150px;
+}
+#pubmed_Search{
+    width: 300px;
+    height: 40px;
+    background-color: #95A7F0;
+    margin: 10px 0px 0px 80px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+#fulltext, #flip2 {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid 1px #c3c3c3;
+    border-radius: 25px;
+    width: 100%;
+}
+#fulltext {
+    padding: 10px;
+    display: none;
+    height: 350px;
+    width: 100%;
+    //background-color: #000;
+}
+#pdfbtn{
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+    height: 100%;
+    background-color: #c3c3c3;
+}
+
+#date_relevnc{
+    width: 330px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#pmc_betwnyrs_btn{
+    width: 330px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#pmcsearch{
+    background: #e9e9eb;
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+#pmcbetwnyers{
+    background: #e9e9eb;
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    border-radius: 10px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+#pmc_Search{
+    width: 300px;
+    height: 50px;
+    background-color: #95A7F0;
+    margin: 10px 0px 0px 100px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+#batchoperation, #flip3 {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid 1px #c3c3c3;
+    border-radius: 25px;
+    width: 100%;
+}
+#batchoperation {
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    height: 350px;
+}
+#algobtn{
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+    height: 100%;
+    background-color: #c3c3c3;
+    padding-top: 50px;
+}
+#algorithm_btn{
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#browsefile1{
+    width: 500px;
+    height: 50px;
+    background-color: #95A7F0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#browsefile2{
+    width: 500px;
+    height: 50px;
+    background-color: #95A7F0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#algorithm_browse_upload{
+    width: 300px;
+    height: 50px;
+    background-color: #95A7F0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#algorithm_panel{
+    background: #e9e9eb;
+    width: 700px;
+    height: 100%;
+    margin: -330px 0px 0px 450px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#browsecontentdiv{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+}
+#browseinfo{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+}
+#pubmedsearch{
+    margin-top: -270px;
+}
+
+#pubmedinputinfo{
+    width: 170px;
+    height: 300px;
+    background-color: activeborder;
+    margin: 0px 0px 0px 620px;
+}
+#pmcinputinfo{
+    width: 170px;
+    height: 300px;
+    background-color: activeborder;
+    margin: 0px 0px 0px 620px;
+}
+#pubmed_btn{
+    width: 300px;
+    height: 50px;
+    background-color: #95A7F0;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#databases{
+    width: 300px;
+    height: 135px;
+    margin: -30px 0px 0px 175px;
+    border-radius: 10px;
+}
+#pubmed_keyword{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 90px;
+}
+#pubmed_records1{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 10px;
+}
+#pubmed_records2{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 10px;
+}
+#pubmed_records3{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 56px;
+}
+#pubmed_records4{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 135px;
+}
+#pubmed_records5{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 10px;
+}
+#pubmed_records6{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 92px;
+}
+#pubmed_records7{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 92px;
+}
+#pmc_records1{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 10px;
+}
+#sortoption{
+    width: 100px;
+    height: 30px;
+    margin: 20px 0px 0px 0px;
+}
+#pmc_records2{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 92px;
+}
+#pmc_records3{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 92px;
+}
+
+
+#pmc_btn{
+    width: 300px;
+    height: 50px;
+    background-color: #95A7F0;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#pmc_query{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 90px;
+}
+#pmc_keyword{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 90px;
+}
+#pmc_records{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 10px;
+}
+#pmc_path{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0px 0px 125px;
+}
+
+
+#develop_window{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#contact1{
+    width: 800px;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+    text-align: justify;
+}
+#image1{
+    padding-top: 30px;
+    padding-left: 150px;
+    display: block;
+}
+#details1{
+    width: 400px;
+    margin: -140px 0px 0px 300px;
+}
+#contact2{
+    width: 800px;
+    height: 200px;
+    margin: 30px 0px 0px 350px;
+    text-align: justify;
+}
+#image2{
+    padding-top: 30px;
+    padding-left: 150px;
+    display: block;
+}
+#details2{
+    width: 400px;
+    margin: -140px 0px 0px 300px;
+}
+
+#contact_window{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#contact_info{
+    width: 1100px;
+    height: 100%;
+    text-align: left;
+    padding-left: 200px;
+}
+#contname{
+    width: 180px;
+    height: 20px;
+    margin: 0px 0px 0px 69px;
+}
+#contemail{
+    width: 180px;
+    height: 20px;
+    margin: 0px 0px 0px 64px;
+}
+#conteorg{
+    width: 180px;
+    height: 18px;
+    margin: 0px 0px 0px 25px;
+}
+#contcomnt{
+    width: 300px;
+    height: 120px;
+    margin: 0px 0px 0px 45px;
+}
+#contsubmit{
+    width: 220px;
+    height: 36px;
+    margin: -30px 0px 0px 125px;
+    font-size: 26px;
+    font-style: italic;
+    background-color: #95A7F0;
+}
+
+#pubmed_result_window{
+    width: 1200px;
+    height: 580px;
+    background-color: #fff;
+    margin: auto; 
+}
+#tabledesign{
+    width: 1200px;  
+    height: 550px;
+    overflow: auto;
+}
+
+#pubmed_table_bottom{
+    font-size:16px;
+    text-align: justify;
+}
+#result_panel{
+    text-align: left;
+    padding-left: 10px;
+}
+#exp_result{
+    width: 200px;
+    height: 30px;
+    background-color: #95A7F0;
+    margin: 0px 0px 0px 750px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#pmc_result_window{
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    margin: auto;
+}
+#exp_result_pmc{
+    width: 250px;
+    height: 35px;
+    background-color: #95A7F0;
+    margin: 0px 0px 0px 250px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+#animtn1{
+    margin: 10px 0px 0px 0px;
+}
+#animtn2{
+    margin: 10px 0px 0px 0px;
+}
+#animtn3{
+    margin: 10px 0px 0px 0px;
+}
+#animtn4{
+    margin: 10px 0px 0px 0px;
+}
+#animtn5{
+    margin: 10px 0px 0px 0px;
+}
+#animtn6{
+    margin: 10px 0px 0px 0px;
+}
+*/
+
+#graph_table{
+    width: 650px;
+    height: 100%;
+}
+#pub_jrl_yr_grph_window{
+    width: 1200px;
+    height: 100%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
